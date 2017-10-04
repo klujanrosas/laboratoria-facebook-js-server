@@ -1,0 +1,31 @@
+{
+  "name": "laboratoria-facebook-js-server",
+  "version": "1.0.0",
+  "description": "Backend for laboratoria-facebook-js",
+  "main": "index.js",
+  "author": "klujanrosas",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "eslint": "4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "express": "^4.16.1",
+    "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src"
+  }
+}
