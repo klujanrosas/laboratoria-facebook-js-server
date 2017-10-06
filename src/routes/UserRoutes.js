@@ -1,15 +1,18 @@
-import _ from 'lodash'
 import express from 'express'
 import db from '../util/fakeData'
 
 const router = express.Router()
 
-router.post('/', (req, res) => {
-  const { username, password } = req.body
-  console.log(req.body)
-  const found = db.find(user => {
-    return user.username === username && user.password === password
+router.get('/test', (req, res) => {
+  res.json({
+    payload: 'API working as expected'
   })
+})
+
+router.post('/', (req, res) => {
+  const { token } = req.body
+  console.log('requesting data for', req.body)
+  const found = db.find(user => user.token === token)
   setTimeout(() => {
     if (found) {
       res.json({ payload: found })
