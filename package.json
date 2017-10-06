@@ -26,6 +26,8 @@
     "lodash": "^4.17.4"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node ./src"
+    "dev": "nodemon --exec babel-node ./src",
+    "build": "babel -d dist ./src",
+    "start": "node ./dist"
   }
 }
